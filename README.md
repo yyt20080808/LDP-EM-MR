@@ -6,22 +6,21 @@ To run the experiments in this repo, you may need to use python3.8 or later vers
 
 ## File structure
 - `./src`: the source directory of all the mechanisms, datasets and models we have experimented with.
-  - `./src/MR` implements our main method, the mixture reduction(MR).
-  - `./src/categoricalProtocols` implements our main result, the Blink framework.
-  - `./src/numericalProtocols` implements vanilla randomized response as a baseline.
+  - `./src/MR` implements our main method, the mixture reduction(MR) for different SOTA protocols.
+  - `./src/categoricalProtocols` SOTA LDP categorical protocols, we implement its EM-based MLE and unbiased estimation (GRR & OLH).
+  - `./src/numericalProtocols`  SOTA LDP numerical protocols, we implement its EM-based MLE and unbiased estimation (PM).
   - `./src/SP2023convo` follows the implementation on frequency estimation from SP2023.
-  - `./src/opendata` contains all the code to download, pre-process and load graph datasets including Cora, CiteCeer and LastFM.
+  - `./src/opendata` contains all the real datasets(SFC & Income) .
 - `./scripts` is the directory of Python scripts to run experiments.
-  - `./scripts/frequencyCompare` runs the Blink framework with specified settings.
-  - `./scripts/meanCompare` runs baseline methods with specified settings.
-  - `./scripts/distributionCompare` stores all the log files when running the scripts above.
-  - `./scripts/output` stores the results (hyperparameter choices and final accuracy).
+  - `./scripts/frequencyCompare` runs the baseline with our method for frequency estimation.
+  - `./scripts/meanCompare` runs baseline with our method for mean estimation.
+  - `./scripts/distributionCompare` runs baseline with our method for distribution estimation.
+  - `./scripts/output` stores the results.
  
 ## Running
-Inside directory, you can run experiments with `python3 run_blink.py {variant name} {dataset} {model_name} --eps {epsilon_list}`, like:
+Inside directory, you can run experiments like:
 ```
-python3 run_blink.py hybrid cora gcn --eps 1
+python3 compareIndifferentDataset_PM.py
 
-## Citation
-Please cite our paper as follows:
+
 
