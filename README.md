@@ -22,5 +22,9 @@ Inside directory, you can run experiments like:
 ```
 python3 compareIndifferentDataset_PM.py
 
+## Additional comparison
+updates at 2024/03/22 in rebuttal period
+- `./scripts/OLHEMIBU.py`: is the script comparing the our implemeation of OLH-EM  with [E] (require the package 'multi_freq_ldpy') 
 
+[E] Arcolezi, H.H., Cerna, S., Palamidessi, C. "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms". In: DBSec 2023. 
 
