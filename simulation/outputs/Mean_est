@@ -1,0 +1,8 @@
+SFC dataset.
+The averaged MSE (10 times) of PM's when epsilon = 1:
+MSE of Directly adding:	 0.0001573279832804427
+MSE of EM:	 6.912418321823683e-05
+MSE of Ours (MR):	 2.872432831873303e-05
+Existing method, when epsilon = 1:
+MSE of SW-EMS:	 0.00012084989993942606
+MSE of Duchi's:	 0.00015752324218896706

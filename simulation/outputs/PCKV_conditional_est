@@ -1,0 +1,41 @@
+epsilon=1.3
+
+MSE of frequency : portion 0.03
+PCKVGRR =  [0.1320569389, ]
+PCKVUE =  [4.5054204310270646e-05, ]
+Ours =  [0.0001481823, ]
+
+MSE of conditional mean values: portion 0.03
+PCKVGRR =  [0.03639343633340464, ]
+res_PCKV_UE =  [0.060281982285256136, ]
+Ours =  [0.0179043141, ]
+
+MSE of frequency : portion 0.05
+PCKVGRR =  [0.1265508375, ]
+PCKVUE =  [3.888869067946502e-05, ]
+Ours =  [0.000100328, ]
+
+MSE of conditional mean values: portion 0.05
+PCKVGRR =  [0.0361598096377065, ]
+res_PCKV_UE =  [0.01879375237037278, ]
+Ours =  [0.0144866032, ]
+
+MSE of frequency : portion 0.1
+PCKVGRR =  [0.1138452957, ]
+PCKVUE =  [5.166881478527642e-05, ]
+Ours =  [9.80795e-05, ]
+
+MSE of conditional mean values: portion 0.1
+PCKVGRR =  [0.03633463235854113, ]
+res_PCKV_UE =  [0.006022189251204414, ]
+Ours =  [0.0020062724, ]
+
+MSE of frequency : portion 0.2
+PCKVGRR =  [0.0896188809, ]
+PCKVUE =  [4.833773744913994e-05, ]
+Ours =  [0.0002418054, ]
+
+MSE of conditional mean values: portion 0.2
+PCKVGRR =  [0.0357967400750772, ]
+res_PCKV_UE =  [0.0011945819866942533, ]
+Ours =  [0.0003149222, ]

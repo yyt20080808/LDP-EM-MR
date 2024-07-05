@@ -1,0 +1,8 @@
+The average WD (10 times), when epsilon = 2:
+WD of PM-EM:	 4.1517169599130455
+WD of ours, PM-MR:	 4.017086258284346
+WD of SW-EMS:	 5.7703028593895755
+WD of ours, SW-MR:	 5.301037574708853
+The average MAE on distribution variance (10 times)  of PM, when epsilon = 2:
+MAE of PM-EM:	 0.0041694833843804475
+MAE of ours, PM-MR:	 0.0015159771332217413
