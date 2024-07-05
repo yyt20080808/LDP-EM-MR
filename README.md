@@ -24,8 +24,9 @@ Some FOs code is based on the implementation by [Wang](https://github.com/vvv214
 - `./simulation` is the directory of Python scripts to run experiments.
   - `./simulation/fre_est_grr.py` runs the baseline GRR with our method for frequency estimation.
   - `./simulation/fre_est_olh.py` runs the baseline OLH with our method for frequency estimation.
-  - `./simulation/mean_est` runs baselines (PM & SR) with our method for mean estimation.
-  - `./simulation/distribution_est` runs baseline with our method for distribution estimation.
+  - `./simulation/mean_est.py` runs baselines (PM & SR) with our method for mean estimation.
+  - `./simulation/distribution_est.py` runs baseline with our method for distribution estimation.
+  - `./simulation/conditional_est.py` runs baseline with our method for Key-value tasks.
   - `./simulation/output` stores the results.
  
 ## Running
@@ -80,7 +81,7 @@ print("Ours,GRR-MR:", sum(acc2) / exper_time)
 ```
 And the output is
 ```
-MSE: 	 full domain 
+MSE: full domain 
 GRR-Nonprocess: 5.916919126602377e-05
 GRR-BaseCut: 3.86858407911396e-05
 GRR-NormSub: 2.4756176741259298e-05
@@ -95,3 +96,6 @@ Ours,GRR-MR: 2.303019160242734e-05
 
 [1] Arcolezi, H.H., Cerna, S., Palamidessi, C. "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms". In: DBSec 2023. -->
 
+## Acknowledgements
+
+## Todo
