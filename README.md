@@ -30,16 +30,17 @@ Some FOs code is based on the implementation by [Wang](https://github.com/vvv214
   - `./simulation/output` stores some results.
  
 ## Running
-Inside directory, you can run experiments like:
+Inside 'simulation' directory, you can run experiments like:
 ```
 python fre_est_grr.py
 ```
-
+or other tasks.
 ## Basic Usage
+This is an example of running fre_est_grr.py
 ```python
 from ldp_reduction.protocols.categoricalProtocols.GRR import GRR, GRR_revision_no, norm_sub, GRR_revision_basecut, IIW
 from ldp_reduction.protocols.categoricalProtocols.GRR_EM import EM_GR
-from ldp_reduction.protocols.MR.GRR_EM_reduction import EM_GRR_reduct_merge
+from ldp_reduction.protocols.MR.GRR_EM_reduction import EM_GRR_reduct_merge  # ours
 
 # Using General Random Response (GRR) for frequency estimation
 
