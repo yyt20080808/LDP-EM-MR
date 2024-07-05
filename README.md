@@ -91,6 +91,10 @@ GRR-EM: 2.991674829830207e-05
 Ours,GRR-MR: 2.303019160242734e-05
 ```
 
+## Outputs
+For four estimation tasks(frequency estimation, mean estimation, numerical distribution, conditional estimation), some outputs are stored  `./simulation/output`.
+And one can change dataset used or epsilon (from 0.5 to 4) in scripts for further comparison.   
+
 <!--## Additional comparison
 
 - `./scripts/OLHEMIBU.py`: is the script comparing the our implemeation of OLH-EM  with [1] (require the package 'multi_freq_ldpy') 
