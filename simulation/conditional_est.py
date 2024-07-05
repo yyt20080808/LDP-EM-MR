@@ -1,11 +1,4 @@
-# coding=utf-8
-# priv-kvm
-# pri-CMM（OPM）
-# cfw-with-bin-16
-# pri-CMM(OPM-S f=0.5)
 
-# varing  epsilon     \alpha = 0.1  \alpha = 0.3   (SMN 两个图)  \gamma = 0.2
-#  n=10000
 import matplotlib.pyplot as plt
 
 import numpy as np
@@ -13,11 +6,9 @@ import math
 import random
 from numpy import linalg as LA
 from ldp_reduction.protocols.MR.PCKV_EM import SVEPM
-# import matplotlib.pyplot as plt
 import sys
 sys.path.append('../ldp_reduction')
 from ldp_reduction.protocols.KeyValueProtocols.PCKVUE import pckv_UE
-# ssss = [100]
 from ldp_reduction.protocols.KeyValueProtocols.PCKVGRR import pckv_GRR
 
 def generate_Data(alpha,type):
@@ -46,9 +37,6 @@ def generate_Data(alpha,type):
     newb = [0 for i in range(number - basic)]
     res.append(newa)
     res.append(newb)
-    noisedData, _ = np.histogram(newa, bins=512, range=(-1, 1))
-    # plt.plot([i for i in range(512)], noisedData)
-    # plt.show()
     return res
 
 
