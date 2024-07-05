@@ -27,7 +27,7 @@ Some FOs code is based on the implementation by [Wang](https://github.com/vvv214
   - `./simulation/mean_est.py` runs baselines (PM & SR) with our method for mean estimation.
   - `./simulation/distribution_est.py` runs baseline with our method for distribution estimation.
   - `./simulation/conditional_est.py` runs baseline with our method for Key-value tasks.
-  - `./simulation/output` stores the results.
+  - `./simulation/output` stores some results.
  
 ## Running
 Inside directory, you can run experiments like:
