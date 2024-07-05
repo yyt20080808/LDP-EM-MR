@@ -2,7 +2,16 @@
 Equip the existing SOTA LDP protocols with Expectation-maximization algorithm and reduction framework for estimating.
 
 ## Dependencies
-To run the experiments in this repo, you may need to use python3.8 or later version, you need to install package `numpy`, `xxhash`. 
+To run the experiments in this repo, you may need to use python3.8 or later version, you need to install package `numpy`, `xxhash`,`matplotlib`. 
+
+## Outline
+This includes the implementations of Mixture Reduction (MR) framework for estimating LDP noised reports generate from SOTA LDP protocols.
+- ` [GRR & OLH](https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-wang-tianhao.pdf):  Existing FOs for frequency estimation, \grr performs better than \olh when $K<3e^{\varepsilon}+2$.
+- ` [PM](https://arxiv.org/abs/1907.00782) & [SR](): Existing numerical protocols for mean estimation, \sr performs better than \pmm when $\varepsilon$ is small.
+- ` [SW](https://dl.acm.org/doi/abs/10.1145/3318464.3389700):  Existing numerical protocols for distribution estimation, equiped with EM and smoothing technique. 
+- ` [PCKV](https://www.usenix.org/system/files/sec20-gu.pdf): Existing key-value protocols, for frequency estimation on key, and conditional mean estimation on value.
+
+Some FOs code is based on the implementation by [Wang](https://github.com/vvv214/LDP_Protocols) and [Maddock](https://github.com/Samuel-Maddock/pure-LDP/blob/master/README.md). And the estimating methods includes unbiased estimation, post-processing method([Basecut, Normsub](https://github.com/vvv214/LDP_Protocols/tree/master/post-process),[IIW](https://github.com/SEUNICK/LDP)), EM-based MLE and our MR.
 
 ## File structure
 - `./ldp_reduction`: the source directory of all the mechanisms, datasets and models we have experimented with.
@@ -69,10 +78,20 @@ print("GRR-EM:", sum(acc1) / exper_time)
 print("Ours,GRR-MR:", sum(acc2) / exper_time)
 
 ```
+And the output is
+```
+MSE: 	 full domain 
+GRR-Nonprocess: 5.916919126602377e-05
+GRR-BaseCut: 3.86858407911396e-05
+GRR-NormSub: 2.4756176741259298e-05
+GRR-IIW: 5.4360581915246e-05
+GRR-EM: 2.991674829830207e-05
+Ours,GRR-MR: 2.303019160242734e-05
+```
 
-## Additional comparison
+<!--## Additional comparison
 
 - `./scripts/OLHEMIBU.py`: is the script comparing the our implemeation of OLH-EM  with [1] (require the package 'multi_freq_ldpy') 
 
-[1] Arcolezi, H.H., Cerna, S., Palamidessi, C. "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms". In: DBSec 2023. 
+[1] Arcolezi, H.H., Cerna, S., Palamidessi, C. "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms". In: DBSec 2023. -->
 
