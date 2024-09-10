@@ -16,7 +16,7 @@ elif dataset == "Income":
 else:
     length = 12
 
-def generate_noised_data(epsilon,dataset):
+def generate_noised_data(epsilon):
     # SFC dataset
     if dataset == "SFC":
         ori = np.array(
